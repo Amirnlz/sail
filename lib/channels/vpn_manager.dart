@@ -1,5 +1,6 @@
 import 'package:flutter/services.dart';
-import 'package:sail/utils/common_util.dart';
+
+import '../utils/common_util.dart';
 
 enum VpnStatus {
   connected(code: 2),

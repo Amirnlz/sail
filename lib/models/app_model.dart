@@ -1,13 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
-import 'package:sail/adapters/leaf_ffi/config.dart';
-import 'package:sail/channels/vpn_manager.dart';
-import 'package:sail/constant/app_colors.dart';
-import 'package:sail/constant/app_strings.dart';
-import 'package:sail/models/base_model.dart';
-import 'package:sail/models/server_model.dart';
-import 'package:sail/models/user_model.dart';
-import 'package:sail/utils/common_util.dart';
+
+import '../adapters/leaf_ffi/config.dart';
+import '../channels/vpn_manager.dart';
+import '../constant/app_colors.dart';
+import '../constant/app_strings.dart';
+import '../utils/common_util.dart';
+import 'base_model.dart';
+import 'server_model.dart';
+import 'user_model.dart';
 
 class AppModel extends BaseModel {
   VpnManager vpnManager = VpnManager();

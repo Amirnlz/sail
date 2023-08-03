@@ -1,8 +1,8 @@
-import 'package:sail/constant/app_urls.dart';
-import 'package:sail/entity/login_entity.dart';
-import 'package:sail/entity/user_entity.dart';
-import 'package:sail/entity/user_subscribe_entity.dart';
-import 'package:sail/utils/http_util.dart';
+import '../constant/app_urls.dart';
+import '../entity/login_entity.dart';
+import '../entity/user_entity.dart';
+import '../entity/user_subscribe_entity.dart';
+import '../utils/http_util.dart';
 
 class UserService {
   Future<LoginEntity>? login(Map<String, dynamic> parameters) {

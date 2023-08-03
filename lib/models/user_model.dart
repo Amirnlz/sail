@@ -1,9 +1,9 @@
-import 'package:sail/constant/app_strings.dart';
-import 'package:sail/entity/login_entity.dart';
-import 'package:sail/entity/user_entity.dart';
-import 'package:sail/models/base_model.dart';
-import 'package:sail/utils/navigator_util.dart';
-import 'package:sail/utils/shared_preferences_util.dart';
+import '../constant/app_strings.dart';
+import '../entity/login_entity.dart';
+import '../entity/user_entity.dart';
+import '../utils/navigator_util.dart';
+import '../utils/shared_preferences_util.dart';
+import 'base_model.dart';
 
 class UserModel extends BaseModel {
   String? _token;
@@ -30,7 +30,7 @@ class UserModel extends BaseModel {
     String authData =
         await SharedPreferencesUtil.getInstance()?.getString(AppStrings.authData) ?? '';
 
-    if (token != null && token.isNotEmpty && authData != null && authData.isNotEmpty) {
+    if (token.isNotEmpty && authData.isNotEmpty) {
       _isLogin = true;
       _token = token;
       _authData = authData;

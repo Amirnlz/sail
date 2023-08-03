@@ -2,10 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:intl/intl.dart';
 import 'package:provider/provider.dart';
-import 'package:sail/constant/app_colors.dart';
-import 'package:sail/entity/user_subscribe_entity.dart';
-import 'package:sail/models/app_model.dart';
-import 'package:sail/utils/transfer_util.dart';
+
+import '../constant/app_colors.dart';
+import '../entity/user_subscribe_entity.dart';
+import '../models/app_model.dart';
+import '../utils/transfer_util.dart';
 
 class MySubscribe extends StatefulWidget {
   const MySubscribe({Key? key, required this.isLogin, required this.isOn, required this.userSubscribeEntity})

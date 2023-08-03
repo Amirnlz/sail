@@ -1,6 +1,7 @@
 import 'package:crisp/crisp.dart';
 import 'package:flutter/widgets.dart';
-import 'package:sail/constant/app_strings.dart';
+
+import '../constant/app_strings.dart';
 
 class CrispPage extends StatefulWidget {
   const CrispPage({Key? key}) : super(key: key);

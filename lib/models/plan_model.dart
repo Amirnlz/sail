@@ -1,6 +1,6 @@
-import 'package:sail/entity/plan_entity.dart';
-import 'package:sail/models/base_model.dart';
-import 'package:sail/service/plan_service.dart';
+import '../entity/plan_entity.dart';
+import '../service/plan_service.dart';
+import 'base_model.dart';
 
 class PlanModel extends BaseModel {
   final PlanService _planService = PlanService();

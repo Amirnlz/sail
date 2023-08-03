@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:sail/models/page_state.dart';
-import 'package:sail/utils/common_util.dart';
+
+import '../utils/common_util.dart';
+import 'page_state.dart';
 
 class BaseModel extends ChangeNotifier {
   PageState pageState = PageState.loading;

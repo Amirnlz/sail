@@ -4,20 +4,21 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:provider/provider.dart';
-import 'package:sail/constant/app_colors.dart';
-import 'package:sail/constant/app_dimens.dart';
-import 'package:sail/models/app_model.dart';
-import 'package:sail/models/plan_model.dart';
-import 'package:sail/models/server_model.dart';
-import 'package:sail/models/user_model.dart';
-import 'package:sail/models/user_subscribe_model.dart';
-import 'package:sail/pages/my_profile.dart';
-import 'package:sail/pages/plan/plan_page.dart';
-import 'package:sail/pages/server_list.dart';
-import 'package:sail/widgets/home_widget.dart';
-import 'package:sail/widgets/power_btn.dart';
-import 'package:sail/widgets/sail_app_bar.dart';
-import 'package:sail/utils/common_util.dart';
+
+import '../../constant/app_colors.dart';
+import '../../constant/app_dimens.dart';
+import '../../models/app_model.dart';
+import '../../models/plan_model.dart';
+import '../../models/server_model.dart';
+import '../../models/user_model.dart';
+import '../../models/user_subscribe_model.dart';
+import '../../utils/common_util.dart';
+import '../../widgets/home_widget.dart';
+import '../../widgets/power_btn.dart';
+import '../../widgets/sail_app_bar.dart';
+import '../my_profile.dart';
+import '../plan/plan_page.dart';
+import '../server_list.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);

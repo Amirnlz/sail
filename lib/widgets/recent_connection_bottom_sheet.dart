@@ -3,7 +3,8 @@ import 'dart:ui';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:sail/constant/app_colors.dart';
+
+import '../constant/app_colors.dart';
 
 double minHeight = ScreenUtil().setHeight(260);
 const double iconStartSize = 44;

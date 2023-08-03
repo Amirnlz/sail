@@ -1,5 +1,6 @@
 import 'package:fluro/fluro.dart';
-import 'package:sail/router/router_handlers.dart';
+
+import 'router_handlers.dart';
 
 class Routers {
   static String home = "/";

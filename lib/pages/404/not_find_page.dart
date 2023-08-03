@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:sail/constant/app_images.dart';
-import 'package:sail/constant/app_strings.dart';
+
+import '../../constant/app_images.dart';
+import '../../constant/app_strings.dart';
 
 
 class NotFindPage extends StatelessWidget {

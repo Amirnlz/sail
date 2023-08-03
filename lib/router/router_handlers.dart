@@ -1,12 +1,14 @@
+import 'dart:convert';
+
 import 'package:fluro/fluro.dart';
 import 'package:flutter/material.dart';
-import 'package:sail/pages/home/home_page.dart';
-import 'package:sail/pages/404/not_find_page.dart';
-import 'package:sail/pages/login/login_page.dart';
-import 'package:sail/pages/plan/plan_page.dart';
-import 'package:sail/pages/server_list.dart';
-import 'package:sail/pages/webview_widget.dart';
-import 'dart:convert';
+
+import '../pages/404/not_find_page.dart';
+import '../pages/home/home_page.dart';
+import '../pages/login/login_page.dart';
+import '../pages/plan/plan_page.dart';
+import '../pages/server_list.dart';
+import '../pages/webview_widget.dart';
 
 /// 入口
 Handler homeHandler = Handler(
