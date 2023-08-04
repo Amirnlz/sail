@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:webview_flutter/webview_flutter.dart';
+import 'package:webview_flutter/webview_flutter.dart' as webview;
 
 import '../constant/app_strings.dart';
 
@@ -14,7 +14,7 @@ class WebViewWidget extends StatefulWidget {
 }
 
 class WebViewWidgetState extends State<WebViewWidget> {
-  late WebViewController controller;
+  late webview.WebViewController controller;
 
   final String _javaScript = '''
   const styles = `
@@ -31,20 +31,34 @@ class WebViewWidgetState extends State<WebViewWidget> {
   ''';
 
   @override
+  void initState() {
+    super.initState();
+    final webViewUrl = widget.url?.isEmpty == true
+        ? AppStrings.appName
+        : widget.url ?? 'google.com';
+
+    controller = webview.WebViewController()
+      ..loadRequest(Uri.parse(webViewUrl))
+      ..setJavaScriptMode(webview.JavaScriptMode.unrestricted)
+      ..setNavigationDelegate(
+        webview.NavigationDelegate(
+          onPageFinished: (url) {
+            debugPrint('url=$url');
+            controller.runJavaScript(_javaScript);
+          },
+        ),
+      );
+  }
+
+  @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         title: Text(widget.name!),
         centerTitle: true,
       ),
-      body: WebView(
-        initialUrl: widget.url?.isEmpty == true ? AppStrings.appName : widget.url,
-        javascriptMode: JavascriptMode.unrestricted,
-        onWebViewCreated: (controller) => this.controller = controller,
-        onPageFinished: (url) {
-          print('url=$url');
-          controller.runJavascript(_javaScript);
-        },
+      body: webview.WebViewWidget(
+        controller: controller,
       ),
     );
   }
