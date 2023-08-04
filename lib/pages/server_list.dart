@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:modal_bottom_sheet/modal_bottom_sheet.dart';
 import 'package:provider/provider.dart';
 
 import '../constant/app_colors.dart';
@@ -144,7 +143,7 @@ class ServerListPageState extends State<ServerListPage> with AutomaticKeepAliveC
 
   Widget _serverListWidget() {
     return ListView.separated(
-      controller: ModalScrollController.of(context),
+      // controller: ModalScrollController.of(context),
       physics: const ClampingScrollPhysics(),
       itemCount: _serverModel.serverEntityList.length,
       itemBuilder: (_, index) => InkWell(

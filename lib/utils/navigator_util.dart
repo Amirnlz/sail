@@ -1,8 +1,7 @@
 import 'dart:convert';
 
 import 'package:fluro/fluro.dart';
-import 'package:flutter/cupertino.dart';
-import 'package:modal_bottom_sheet/modal_bottom_sheet.dart';
+import 'package:flutter/material.dart';
 
 import '../pages/crisp_page.dart';
 import '../pages/plan/plan_page.dart';
@@ -22,7 +21,7 @@ class NavigatorUtil {
   }
 
   static goPlan(BuildContext context) {
-    showCupertinoModalBottomSheet(
+    showModalBottomSheet(
       context: context,
       builder: (context) => const PlanPage()
     );
@@ -31,7 +30,7 @@ class NavigatorUtil {
   }
 
   static goServerList(BuildContext context) {
-    showCupertinoModalBottomSheet(
+    showModalBottomSheet(
         context: context,
         builder: (context) => const ServerListPage()
     );
@@ -40,7 +39,7 @@ class NavigatorUtil {
   }
 
   static goToCrisp(BuildContext context) {
-    showCupertinoModalBottomSheet(
+    showModalBottomSheet(
         context: context,
         builder: (context) => const CrispPage()
     );
