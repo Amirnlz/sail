@@ -3,7 +3,7 @@ description: a proxy client application.
 
 # The following line prevents the package from being accidentally published to
 # pub.dev using `pub publish`. This is preferred for private packages.
-publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+publish_to: "none" # Remove this line if you wish to publish to pub.dev
 
 # The following defines the version and build number for your application.
 # A version number is three numbers separated by dots, like 1.2.43
@@ -29,21 +29,20 @@ dependencies:
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.5
-  dio: ^4.0.6
+  dio: ^5.3.2
   fluro: ^2.0.3
-  shared_preferences: ^2.0.15
-  webview_flutter: ^3.0.4
-  provider: ^6.0.3
-  flutter_screenutil: ^5.5.3+2
-  flutter_login: ^3.2.0
+  shared_preferences: ^2.2.0
+  webview_flutter: ^4.2.2
+  provider: ^6.0.5
+  flutter_screenutil: ^5.8.4
+  flutter_login: ^4.2.0
   flutter_easyrefresh: ^2.1.8
   intl: ^0.18.0
-  path_provider: ^2.0.10
+  path_provider: ^2.0.15
   crisp: ^0.3.1
-  modal_bottom_sheet: ^3.0.0-pre
-  fluttertoast: ^8.0.9
+  fluttertoast: ^8.2.2
   meta: ^1.7.0
-  flutter_icmp_ping: ^3.1.0
+  flutter_icmp_ping: ^3.1.2
 
 dev_dependencies:
   flutter_lints: ^2.0.1
